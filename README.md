@@ -1,6 +1,9 @@
 # swag-labs-robot-test-automation
 Swag labs - https://www.saucedemo.com - Automation test scripts using Robot framework
 
+**Manual Test cases:**
+TC_Swag Labs.xlsx
+
 **Set-up**
 Execution setup includes Python and Robot framework libraries
 
