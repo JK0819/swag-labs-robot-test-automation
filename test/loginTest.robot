@@ -12,18 +12,18 @@ ${loginPageTitle}       Swag Labs
 
 *** Test Cases ***
 Validate Login Page Content
-    [Tags]      LOGIN
+    [Tags]      LOGIN   REGRESSION
     login.Login Page title header   ${loginPageTitle}
     login.Username and password textfields are displayed
     login.Login button is displayed
 
 Validate UnSuccesful Login
-    [Tags]      LOGIN
+    [Tags]      LOGIN   REGRESSION
     login.Fill the login Form     ${userName}    ${invalidPassword}
     generic.Wait until element passed is located on Page     ${errorMsgLocator}
     login.Verify error message is correct
 
 Validate Successful Login
-    [Tags]      LOGIN
+    [Tags]      LOGIN   REGRESSION
     login.Fill the login Form     ${userName}    ${validPassword}
     generic.Wait until element passed is located on Page     ${cartIcon}

@@ -12,7 +12,7 @@ ${productName}      Sauce Labs Fleece Jacket
 
 *** Test Cases ***
 Validate Products page content
-    [Tags]      PRODUCTS
+    [Tags]      PRODUCTS    REGRESSION
     login.Fill the login Form     ${userName}    ${validPassword}
     generic.Verify Header content
     products.Verify product page sub header
@@ -20,7 +20,7 @@ Validate Products page content
     generic.Verify Footer content
 
 Select product and proceed to cart
-    [Tags]      PRODUCTS
+    [Tags]      PRODUCTS    REGRESSION
     login.Fill the login Form     ${userName}    ${validPassword}
     products.Add product to cart    ${productName}
     products.Click on cart icon

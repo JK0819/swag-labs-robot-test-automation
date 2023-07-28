@@ -13,7 +13,7 @@ ${productName}      Sauce Labs Bike Light
 
 *** Test Cases ***
 Validate cart page content and checkout
-    [Tags]      CART
+    [Tags]      CART    REGRESSION
     login.Fill the login Form     ${userName}    ${validPassword}
     products.Add product to cart    ${productName}
     products.Click on cart icon

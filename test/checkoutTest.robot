@@ -16,7 +16,7 @@ ${overviewTitle}    Checkout: Overview
 
 *** Test Cases ***
 Validate checkout flow
-    [Tags]      CHECKOUT
+    [Tags]      CHECKOUT    REGRESSION
     checkout.Navigate to checkout flow      ${productName}
     checkout.Verify checkout sub header     ${checkoutTitle}
     checkout.Fill checkout form     ${firstName}    ${lastName}     ${postalCode}
